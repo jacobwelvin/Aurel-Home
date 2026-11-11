@@ -28,7 +28,7 @@ A modern, high-craft e-commerce platform designed for an artisanal home décor a
 - [Running the Application](#running-the-application)
 - [API Documentation](#api-documentation)
 - [Security Architecture](#security-architecture)
-- [Screenshots](#screenshots)
+- [Application Screenshots](#application-screenshots)
 - [Planned Enhancements](#planned-enhancements)
 - [Author & License](#author--license)
 
@@ -478,21 +478,28 @@ FastAPI automatically generates interactive OpenAPI documentation and schemas. O
 
 ---
 
-## Screenshots
+## Application Screenshots
 
-> *Placeholder: Add application screenshots to `public/images/screenshots/` and update references below before sharing.*
+Visual walkthrough of the Aurel Home e-commerce platform across the patron storefront journey and atelier administration dashboard.
 
-| Storefront Homepage | Product Catalogue & Details |
+### Storefront & Patron Experience
+
+| Storefront Homepage | Product Catalogue & Browsing |
 | :---: | :---: |
-| ![Storefront Placeholder](public/images/placeholder.png) | ![Product Details Placeholder](public/images/placeholder.png) |
+| ![Storefront Homepage](public/images/screenshots/storefront-homepage.png) | ![Product Catalogue](public/images/screenshots/product-catalog.png) |
+| *Editorial homepage featuring curated collections, design realm highlights, and atelier craftsmanship.* | *Catalogue browsing with design realm filtering, sorting criteria, and real-time stock indicators.* |
 
-| Checkout & Payment Modal | Consignment Tracking & Invoice |
+| Delivery Checkout & Settlement | Consignment Tracking & Invoice |
 | :---: | :---: |
-| ![Checkout Placeholder](public/images/placeholder.png) | ![Invoice Placeholder](public/images/placeholder.png) |
+| ![Delivery Checkout & Settlement](public/images/screenshots/product-checkout.png) | ![Consignment Tracking & Invoice](public/images/screenshots/tracking-invoice.png) |
+| *Seamless checkout with delivery address forms and dual settlement (Cash on Delivery or UPI Razorpay).* | *Consignment status tracking, expandable order cards, and downloadable A4 tax invoice.* |
 
-| Atelier Admin Overview | Consignment Management |
+### Atelier Administration
+
+| Admin Overview Dashboard | Consignment & Order Management |
 | :---: | :---: |
-| ![Admin Dashboard Placeholder](public/images/placeholder.png) | ![Admin Orders Placeholder](public/images/placeholder.png) |
+| ![Admin Overview Dashboard](public/images/screenshots/admin-overview.png) | ![Consignment Management](public/images/screenshots/consignment-management.png) |
+| *Executive dashboard displaying gross revenue, consignment metrics, patron volume, and catalogue stats.* | *Granular consignment fulfillment table with status transitions (Confirmed, Processing, Shipped, Delivered).* |
 
 ---
 
