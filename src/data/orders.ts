@@ -1,0 +1,271 @@
+import { Order } from "@/types";
+import { PRODUCTS } from "./products";
+
+export const SAMPLE_ORDERS: Order[] = [
+  {
+    id: "ord-8921",
+    orderNumber: "AUR-8921-IN",
+    date: "October 12, 2026",
+    status: "Processing",
+    estimatedDelivery: "October 18, 2026",
+    trackingNumber: "DTDC-992817264",
+    items: [
+      {
+        id: "item-1",
+        product: PRODUCTS[0], // Soren Lounge Chair
+        quantity: 1,
+        selectedColor: "Oatmeal Bouclé",
+      },
+      {
+        id: "item-2",
+        product: PRODUCTS[1], // Komorebi Lamp
+        quantity: 1,
+        selectedColor: "Matte Sand & Brass",
+      },
+    ],
+    subtotal: 57350,
+    shipping: 0,
+    discount: 5000,
+    total: 52350,
+    shippingAddress: {
+      fullName: "Ananya Deshmukh",
+      email: "ananya.d@example.com",
+      phone: "+91 98201 44521",
+      address: "Flat 14B, Sea View Residences, Worli Sea Face",
+      city: "Mumbai",
+      state: "Maharashtra",
+      postalCode: "400018",
+      country: "India",
+    },
+    paymentMethod: "Razorpay Sandbox (UPI)",
+    timeline: [
+      {
+        status: "Placed",
+        date: "Oct 12, 10:30 AM",
+        description: "Order allocation confirmed & placed in artisan workshop queue",
+        completed: true,
+      },
+      {
+        status: "Confirmed",
+        date: "Oct 12, 02:15 PM",
+        description: "Payment verified via secure protocol",
+        completed: true,
+      },
+      {
+        status: "Processing",
+        date: "Oct 13, 09:00 AM",
+        description: "Artisan bench finishing and white-glove packaging inspection",
+        completed: true,
+        current: true,
+      },
+      {
+        status: "Shipped",
+        date: "Estimated Oct 15",
+        description: "Consignment handed over to dedicated logistics partner",
+        completed: false,
+      },
+      {
+        status: "Delivered",
+        date: "Estimated Oct 18",
+        description: "Delivered and unboxed at domestic address",
+        completed: false,
+      },
+    ],
+  },
+  {
+    id: "ord-8840",
+    orderNumber: "AUR-8840-IN",
+    date: "October 06, 2026",
+    status: "Shipped",
+    estimatedDelivery: "October 15, 2026",
+    trackingNumber: "BLUE-440219830",
+    items: [
+      {
+        id: "item-3",
+        product: PRODUCTS[2], // Woven Belgian Flax Throw
+        quantity: 2,
+        selectedColor: "Muted Sage",
+      },
+      {
+        id: "item-4",
+        product: PRODUCTS[3], // Aurel Linen Curtain
+        quantity: 4,
+        selectedColor: "Alabaster White",
+        selectedSize: "140 × 245 cm",
+      },
+    ],
+    subtotal: 30800,
+    shipping: 0,
+    discount: 1500,
+    total: 29300,
+    shippingAddress: {
+      fullName: "Rohan Varma",
+      email: "rohan.varma@example.com",
+      phone: "+91 98450 11209",
+      address: "Villa 22, Windchimes Sanctuary, Indiranagar",
+      city: "Bengaluru",
+      state: "Karnataka",
+      postalCode: "560038",
+      country: "India",
+    },
+    paymentMethod: "Credit Card (Visa •••• 4022)",
+    timeline: [
+      {
+        status: "Placed",
+        date: "Oct 06, 11:20 AM",
+        description: "Order placed by patron",
+        completed: true,
+      },
+      {
+        status: "Confirmed",
+        date: "Oct 06, 11:25 AM",
+        description: "Payment confirmed",
+        completed: true,
+      },
+      {
+        status: "Processing",
+        date: "Oct 07, 03:00 PM",
+        description: "Carefully wrapped in unbleached molded cotton pulp",
+        completed: true,
+      },
+      {
+        status: "Shipped",
+        date: "Oct 09, 10:45 AM",
+        description: "In transit with priority freight",
+        completed: true,
+        current: true,
+      },
+      {
+        status: "Delivered",
+        date: "Estimated Oct 15",
+        description: "Scheduled for doorstep delivery",
+        completed: false,
+      },
+    ],
+  },
+  {
+    id: "ord-8712",
+    orderNumber: "AUR-8712-IN",
+    date: "September 24, 2026",
+    status: "Delivered",
+    estimatedDelivery: "September 29, 2026",
+    trackingNumber: "DEL-88712001",
+    items: [
+      {
+        id: "item-5",
+        product: PRODUCTS[6], // Washed Linen Duvet Set
+        quantity: 1,
+        selectedColor: "Warm Clay",
+        selectedSize: "King (104\" × 90\")",
+      },
+      {
+        id: "item-6",
+        product: PRODUCTS[8], // Kyoto Fog Room Diffuser
+        quantity: 1,
+      },
+    ],
+    subtotal: 18100,
+    shipping: 0,
+    discount: 0,
+    total: 18100,
+    shippingAddress: {
+      fullName: "Meera Kulkarni",
+      email: "meera.k@example.com",
+      phone: "+91 97110 33890",
+      address: "102 Heritage Apartments, Vasant Vihar",
+      city: "New Delhi",
+      state: "Delhi",
+      postalCode: "110057",
+      country: "India",
+    },
+    paymentMethod: "Net Banking (HDFC)",
+    timeline: [
+      { status: "Placed", date: "Sep 24, 09:10 AM", description: "Order confirmed", completed: true },
+      { status: "Confirmed", date: "Sep 24, 09:15 AM", description: "Payment approved", completed: true },
+      { status: "Processing", date: "Sep 25, 11:00 AM", description: "Dispatched from regional atelier", completed: true },
+      { status: "Shipped", date: "Sep 26, 04:30 PM", description: "Out for transit", completed: true },
+      { status: "Delivered", date: "Sep 29, 01:15 PM", description: "Successfully delivered to patron", completed: true, current: true },
+    ],
+  },
+  {
+    id: "ord-8520",
+    orderNumber: "AUR-8520-IN",
+    date: "September 10, 2026",
+    status: "Delivered",
+    estimatedDelivery: "September 18, 2026",
+    trackingNumber: "BLUE-33129841",
+    items: [
+      {
+        id: "item-7",
+        product: PRODUCTS[5], // Sabi Stoneware Vessel
+        quantity: 2,
+        selectedColor: "Speckled Ash",
+      },
+    ],
+    subtotal: 15200,
+    shipping: 0,
+    discount: 1000,
+    total: 14200,
+    shippingAddress: {
+      fullName: "Sameer Nambiar",
+      email: "sameer.n@example.com",
+      phone: "+91 94470 55192",
+      address: "Palm Grove Villa 4, Panampilly Nagar",
+      city: "Kochi",
+      state: "Kerala",
+      postalCode: "682036",
+      country: "India",
+    },
+    paymentMethod: "UPI (Google Pay)",
+    timeline: [
+      { status: "Placed", date: "Sep 10", description: "Order received", completed: true },
+      { status: "Confirmed", date: "Sep 10", description: "Order confirmed", completed: true },
+      { status: "Processing", date: "Sep 11", description: "Double-boxed protective packing", completed: true },
+      { status: "Shipped", date: "Sep 13", description: "En route", completed: true },
+      { status: "Delivered", date: "Sep 18", description: "Delivered safely", completed: true, current: true },
+    ],
+  },
+  {
+    id: "ord-8301",
+    orderNumber: "AUR-8301-IN",
+    date: "August 28, 2026",
+    status: "Delivered",
+    estimatedDelivery: "September 04, 2026",
+    trackingNumber: "DTDC-77192003",
+    items: [
+      {
+        id: "item-8",
+        product: PRODUCTS[9], // Waffle Organic Bath Sheet
+        quantity: 3,
+        selectedColor: "Unbleached Ecru",
+      },
+      {
+        id: "item-9",
+        product: PRODUCTS[10], // Hinoki Bath Mat
+        quantity: 1,
+      },
+    ],
+    subtotal: 15000,
+    shipping: 0,
+    discount: 1500,
+    total: 13500,
+    shippingAddress: {
+      fullName: "Pooja Singhania",
+      email: "pooja.s@example.com",
+      phone: "+91 99200 44881",
+      address: "18 Jubilee Hills, Road No. 36",
+      city: "Hyderabad",
+      state: "Telangana",
+      postalCode: "500033",
+      country: "India",
+    },
+    paymentMethod: "Credit Card (Amex •••• 1009)",
+    timeline: [
+      { status: "Placed", date: "Aug 28", description: "Order placed", completed: true },
+      { status: "Confirmed", date: "Aug 28", description: "Payment verified", completed: true },
+      { status: "Processing", date: "Aug 29", description: "Packed in linen tote", completed: true },
+      { status: "Shipped", date: "Aug 31", description: "Dispatched", completed: true },
+      { status: "Delivered", date: "Sep 04", description: "Delivered", completed: true, current: true },
+    ],
+  },
+];

@@ -1,0 +1,58 @@
+import { Category } from "@/types";
+
+export const CATEGORIES: Category[] = [
+  {
+    id: "cat-living",
+    slug: "living",
+    name: "Living & Furniture",
+    realmNumber: "Realm 01",
+    description: "Sculptural comfort and architectural forms for everyday domestic rituals and tranquil gathering.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDQKhXmw0GLjzJ42qzf5AU7cgEuxNuInpZrDVpxrxzdVFITfun6ROnkJ4lrhJVFW4KbQFBPpsJc9N_xaFk7lXKDMQGRt9UiaFzFXKvuhUsWvavl1sDNu9Ra2lr9RFuAssuufrz6QmcmaY0fZa-MunfPF51s7xSbt68erCHgrfMwK7CJRipAzeBWOzzGuJ88VUqrBWy1cUpc6D8lpJ3ntYN-p74Yn0INTz759Mv2bc7mBHc8wfPrlFBbQA",
+    itemCount: 34,
+  },
+  {
+    id: "cat-bedroom",
+    slug: "bedroom",
+    name: "Bedroom & Sleep",
+    realmNumber: "Realm 02",
+    description: "Solid ash bed frames, washed linen duvets, and tactile sleep sanctuaries engineered for deep repose.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB82fShdtSa3CbGfTrrT4V95JqQFSstREIj4l9i_qpoSkwav4PjGSr-tEuTrlbEtPdzpH8WODGcTshPHlBOIMg4n8GkTWTjUUvIENnOnBkSqpFBFR3JANJEUeRsqxtxlcu0CblavFGF1_djjfWXQHy-p-OVptJc_ZY99OCd6kjhAuqw6KULsl8tqQi04Uqg6MOZCcNrJoAnobzWlU6mmUBTvaIm-bdYhwhGJIzqxlW2aXtpboTmPJ_iPw",
+    itemCount: 28,
+  },
+  {
+    id: "cat-textiles",
+    slug: "textiles",
+    name: "Curtains & Textiles",
+    realmNumber: "Realm 03",
+    description: "Raw Belgian flax, unbleached linen drapes, and heavyweight throws crafted to filter light softly.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCEhvXgi__n3QB70Qh7229bgF1BW9sPrJ36T4cxvEamHpkIYjdg5SXcb-RB-hmP0JH_9TvnibobE6TpIn8GXMCWz3FFRvXxSvD_ydnLCHvyEmEm-pSvKmaERjtLEcY4SNCgqQUSD3YAPSYWU87V13eOtSgW1bS3g_yHyTNsFYJZPd6TWSMCH8S77NrsGaDAGC3V3qcC1ZslxEla5GNhQmjSKYuVLMHa7e9n6VUKHC5wI3jQ9onNtCK57A",
+    itemCount: 24,
+  },
+  {
+    id: "cat-lighting",
+    slug: "lighting",
+    name: "Lighting & Décor",
+    realmNumber: "Realm 04",
+    description: "Hand-thrown ceramic luminaires, solid travertine vessels, and ambient brass accents.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBS-AHogD47vCnHZV_OGVWNI8IYyDeOOTEqMqIP5OBkKlC_AvQED_ZkPedDAji6qYAzKM0Td6YTrdtxM5Qq8wDqej7VfCyaNm5fByT9ndZ1KXBIMESU5hOFKrnspaOowKZ5mYYPNC5CpvLOvNu1gI6SDMZ6hg306dtgkRK63IymFNl-hlzNL2_3FX2jNfNJxfxcMqoBApi3C3DOG1cBh1XnTlmB3D894sfOnLpXz4qoN4jtXzQfWSrR0A",
+    itemCount: 42,
+  },
+  {
+    id: "cat-bath",
+    slug: "bath",
+    name: "Bath & Rituals",
+    realmNumber: "Realm 05",
+    description: "Waffle-weave GOTS organic towels, hinoki wood bath mats, and mineral wellness objects.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBcGTE4dLphkREaMtrBzYlj9gcqS5z9WAwN0uGZqZGGku3RZvji7HBeSjnuyyy6V7vBUIoekZOWH3SyDvT9KuEadhyvtVjnjzk5dqTev49CWNEwioH0We4jrsqOdBv_O_2QTSMXdc1bX4o0EpzEbNmy-On3hXkf1sDJzkoMQ_wKz3I5ztP19cWRS61vpgqf7_6-s5QztAladVGGU_vbmoo_Eg6x_RJnHE2HyF0IHpTBewrCHwz5h5Eesg",
+    itemCount: 18,
+  },
+  {
+    id: "cat-storage",
+    slug: "storage",
+    name: "Storage & Architecture",
+    realmNumber: "Realm 06",
+    description: "Mortise-and-tenon credenzas, modular solid timber shelving, and minimalist woven organization.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCyynI_0Z6w6KWuNx0-T2ENKIFOolTuFsrwcJ0MUvlzEmEMeSVY2TOb2AtPa2YASEJCYvYxPqgOOfoiIcFh3yWn1uvvtp_rgPmevXZjxbDf2Jj4Q0jDwYvhHdN9ZVry8M_txHwAj_PTDybdCD_Sv93O4OJcAa_DOXyIhB0OkP7edhT5AloaXsNJvNKB8TfmX35u516hWJmL2EL15O0l9mJsbK-K7iqdp44sDn8C0OGhuzJP2VM2_xhqAA",
+    itemCount: 16,
+  },
+];
